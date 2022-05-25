@@ -5,11 +5,16 @@ document.addEventListener('DOMContentLoaded', function() {
   const today = new Date();
   const yearsOfExperienceRef = document.getElementById('yearsOfExperience');
   const currentYearsOfExperience = today.getFullYear() - YEAR_OF_FIRST_FRONTEND_PROJECT;
-  incrementUntilStop(0, currentYearsOfExperience, (counterVal) => {
-    yearsOfExperienceRef.innerText = counterVal;
-  }, () => {
-    yearsOfExperienceRef.classList.add('counter-stopped');
-  } );
+  incrementUntilStop(
+    0, 
+    currentYearsOfExperience, 
+    (counterVal) => {
+      yearsOfExperienceRef.innerText = counterVal;
+    }, 
+    () => {
+      yearsOfExperienceRef.classList.add('counter-stopped');
+    }
+  );
 });
 
 function incrementUntilStop(currentVal = 0, maxCounter, onCounterIncrease, onCounterStop) {
