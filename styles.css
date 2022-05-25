@@ -60,6 +60,10 @@ a {
     --squircle-smooth: 0.6;
 }
 
+.profile-photo-col iframe {
+    margin: 12px auto;
+}
+
 .years-of-experience {
     transition: font-size 300ms;
 }
