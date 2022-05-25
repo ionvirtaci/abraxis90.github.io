@@ -61,6 +61,7 @@ a {
 }
 
 .profile-photo-col iframe {
+    display: block;
     margin: 12px auto;
 }
 
